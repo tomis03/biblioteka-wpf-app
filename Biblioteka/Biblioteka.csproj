@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Wypozyczenia\**" />
-    <EmbeddedResource Remove="Pages\Wypozyczenia\**" />
-    <None Remove="Pages\Wypozyczenia\**" />
-    <Page Remove="Pages\Wypozyczenia\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Biblioteka.Core\Biblioteka.Core.csproj" />
     <ProjectReference Include="..\Biblioteka.Database\Biblioteka.Database.csproj" />
   </ItemGroup>
