@@ -7,13 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Czytelnicy\**" />
     <Compile Remove="Pages\Wypozyczenia\**" />
-    <EmbeddedResource Remove="Pages\Czytelnicy\**" />
     <EmbeddedResource Remove="Pages\Wypozyczenia\**" />
-    <None Remove="Pages\Czytelnicy\**" />
     <None Remove="Pages\Wypozyczenia\**" />
-    <Page Remove="Pages\Czytelnicy\**" />
     <Page Remove="Pages\Wypozyczenia\**" />
   </ItemGroup>
 
