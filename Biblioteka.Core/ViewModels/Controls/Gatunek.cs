@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Biblioteka
+namespace Biblioteka.Core
 {
-    public class Gatunek
+    public class Gatunek : BaseViewModel
     {
-        [Key]
         public int id_gatunku { get; set; }
         public string nazwa_gatunku { get; set; }
     }

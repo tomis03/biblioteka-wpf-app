@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Biblioteka"
         mc:Ignorable="d"
-        Title="Biblioteka" Height="450" Width="900">
-    <local:MainPage></local:MainPage>
+        MinHeight="450"
+        MinWidth="800"
+        Title="MainWindow" Height="450" Width="800">
+    <Frame x:Name="frame" Source="/Pages/LandingPage.xaml" NavigationUIVisibility="Hidden"></Frame>
 </Window>

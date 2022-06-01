@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Biblioteka
 {
     /// <summary>
-    /// Interaction logic for Books.xaml
+    /// Interaction logic for Ksiazka.xaml
     /// </summary>
-    public partial class Books : Page
+    public partial class CzytelnikControls : UserControl
     {
-        public Books()
+        public CzytelnikControls()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

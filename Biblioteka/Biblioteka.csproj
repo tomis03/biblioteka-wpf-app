@@ -7,8 +7,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.17" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
+    <Compile Remove="Pages\Czytelnicy\**" />
+    <Compile Remove="Pages\Wypozyczenia\**" />
+    <EmbeddedResource Remove="Pages\Czytelnicy\**" />
+    <EmbeddedResource Remove="Pages\Wypozyczenia\**" />
+    <None Remove="Pages\Czytelnicy\**" />
+    <None Remove="Pages\Wypozyczenia\**" />
+    <Page Remove="Pages\Czytelnicy\**" />
+    <Page Remove="Pages\Wypozyczenia\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteka.Core\Biblioteka.Core.csproj" />
+    <ProjectReference Include="..\Biblioteka.Database\Biblioteka.Database.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\CzytelnikControls.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Controls\KsiazkaControls - Copy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Controls\CzytelnikControls.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\KsiazkaControls - Copy.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>
