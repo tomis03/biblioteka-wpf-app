@@ -20,13 +20,13 @@ namespace Biblioteka.Core
 
         public ICommand DodajNoweWypozyczenieCommand { get; set; }
         public ICommand UsunWypozyczeniaCommand { get; set; }
-        public ICommand ZwrocWypozyczenieCommand { get; set; }
+        public ICommand ZwrocWypozyczeniaCommand { get; set; }
 
         public WypozyczenieViewModel()
         {
             DodajNoweWypozyczenieCommand = new RelayCommand(DodajNoweWypozyczenie);
             UsunWypozyczeniaCommand = new RelayCommand(UsunWypozyczenia);
-            ZwrocWypozyczenieCommand = new RelayCommand(ZwrocWypozyczenia);
+            ZwrocWypozyczeniaCommand = new RelayCommand(ZwrocWypozyczenia);
 
             foreach (var wypozyczenie in DatabaseLocator.Database.Wypozyczenia.ToList())
             {

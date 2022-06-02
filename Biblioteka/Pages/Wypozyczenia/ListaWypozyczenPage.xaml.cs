@@ -29,5 +29,12 @@ namespace Biblioteka
             LandingPage page = new LandingPage();
             NavigationService.Navigate(page);
         }
+
+        private void Button_Click_2(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var viewModel = (WypozyczenieViewModel)DataContext;
+            viewModel.ZwrocWypozyczeniaCommand.Execute(null);
+            NavigationService.Refresh();
+        }
     }
 }

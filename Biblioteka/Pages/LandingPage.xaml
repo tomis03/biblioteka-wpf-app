@@ -29,6 +29,6 @@
         <Label Content="Czytelnicy:" FontSize="16" Grid.Column="1" Grid.Row="3" Width="150" Height="35" HorizontalAlignment="Left"/>
         <Button Content="Wyświetl czytelników" Grid.Column="2" Grid.Row="3" Width="auto" Height="35" VerticalContentAlignment="Center" Click="Button_Click_1"/>
         <Label Content="Wypożyczenia:" FontSize="16" Grid.Column="1" Grid.Row="4" Width="150" Height="35" HorizontalAlignment="Left"/>
-        <Button Content="Wyświetl wypożyczenia" Grid.Column="2" Grid.Row="4" Width="auto" Height="35" VerticalContentAlignment="Center"/>
+        <Button Content="Wyświetl wypożyczenia" Grid.Column="2" Grid.Row="4" Width="auto" Height="35" VerticalContentAlignment="Center" Click="Button_Click_2"/>
     </Grid>
 </Page>

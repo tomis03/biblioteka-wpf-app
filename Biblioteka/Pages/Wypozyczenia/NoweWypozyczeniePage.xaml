@@ -22,9 +22,9 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="0" Text="Nowe wypożyczenie" Width="200" Height="35" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"/>
-        <Label Content="Czytelnik:" FontSize="16" Grid.Column="1" Grid.Row="1" Width="150" Height="35" HorizontalAlignment="Left"/>
+        <Label Content="ID czytelnika:" FontSize="16" Grid.Column="1" Grid.Row="1" Width="150" Height="35" HorizontalAlignment="Left"/>
         <TextBox Text="{Binding IdCzytelnikaWypozyczenia, Mode=TwoWay}" Grid.Column="2" Grid.Row="1" Width="auto" Height="35" VerticalContentAlignment="Center"/>
-        <Label Content="Książka:" FontSize="16" Grid.Column="1" Grid.Row="2" Width="150" Height="35" HorizontalAlignment="Left"/>
+        <Label Content="ID książki:" FontSize="16" Grid.Column="1" Grid.Row="2" Width="150" Height="35" HorizontalAlignment="Left"/>
         <TextBox Text="{Binding IdKsiazkiWypozyczenia, Mode=TwoWay}" Grid.Column="2" Grid.Row="2" Width="auto" Height="35" VerticalContentAlignment="Center"/>
         <Button Content="Anuluj"  Grid.Column="2" Grid.Row="3" Width="150" Height="35" HorizontalAlignment="Right" Margin="0 0 170 0" Click="Button_Click_1"/>
         <Button Content="Wypożycz" Grid.Column="2" Grid.Row="3" Width="150" Height="35" HorizontalAlignment="Right" Click="Button_Click"/>

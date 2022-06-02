@@ -27,7 +27,7 @@
         <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" Text="Wypożyczenia" Width="150" Height="35" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left"/>
         <Button Content="Wypozycz książkę" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Right" Width="120" Height="35" Click="Button_Click"></Button>
         <Button Command="{Binding UsunWypozyczeniaCommand}" Content="Usuń zaznaczone" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Right" Width="120" Height="35" Margin="0 0 140 0"></Button>
-        <Button Command="{Binding ZwrocWypozyczeniaCommand}" Content="Zwróć zaznaczone" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Right" Width="120" Height="35" Margin="0 0 280 0"></Button>
+        <Button Content="Zwróć zaznaczone" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Right" Width="120" Height="35" Margin="0 0 280 0" Click="Button_Click_2"></Button>
         <Button Content="Powrót" Grid.Column="3" Grid.ColumnSpan="4" Grid.Row="0" HorizontalAlignment="Right" Width="120" Height="35" Margin="0 0 420 0" Click="Button_Click_1"></Button>
         <TextBlock Grid.Column="2" Grid.Row="1" Text="ID" Height="20" FontSize="15" VerticalAlignment="Center"></TextBlock>
         <TextBlock Grid.Column="3" Grid.Row="1" Text="Czytelnik" Height="20" FontSize="15" VerticalAlignment="Center"></TextBlock>
@@ -35,7 +35,7 @@
         <TextBlock Grid.Column="5" Grid.Row="1" Text="Data wypożyczenia" Height="20" FontSize="15" VerticalAlignment="Center"></TextBlock>
         <TextBlock Grid.Column="6" Grid.Row="1" Text="Data zwrotu" Height="20" FontSize="15" VerticalAlignment="Center"></TextBlock>
         <ScrollViewer Height="320" Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="2">
-            <ItemsControl ItemsSource="{Binding ListaWypozyczen}">
+            <ItemsControl ItemsSource="{Binding ListaWypozyczen, Mode=TwoWay}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <local:WypozyczenieControls></local:WypozyczenieControls>

@@ -36,5 +36,10 @@ namespace Biblioteka
             ListaCzytelnikowPage page = new ListaCzytelnikowPage();
             NavigationService.Navigate(page);
         }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ListaWypozyczenPage page = new ListaWypozyczenPage();
+            NavigationService.Navigate(page);
+        }
     }
 }
