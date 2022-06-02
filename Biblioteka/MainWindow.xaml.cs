@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteka.Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,14 @@ namespace Biblioteka
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new GatunekViewModel();
+            var gatunekViewModel = (GatunekViewModel)DataContext;
+            if (gatunekViewModel.ListaGatunkow == null || gatunekViewModel.ListaGatunkow.Count == 0) gatunekViewModel.DodajDomyslneGatunkiCommand.Execute(null);
+
+            DataContext = new WydawnictwoViewModel();
+            var wydawnictwoViewModel = (WydawnictwoViewModel)DataContext;
+            if (wydawnictwoViewModel.ListaWydawnictw == null || wydawnictwoViewModel.ListaWydawnictw.Count == 0) wydawnictwoViewModel.DodajDomyslneWydawnictwaCommand.Execute(null);
         }
     }
 }
