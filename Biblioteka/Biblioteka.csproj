@@ -15,7 +15,7 @@
     <Compile Update="Controls\CzytelnikControls.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Controls\KsiazkaControls - Copy.xaml.cs">
+    <Compile Update="Controls\KsiazkaControls.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -25,7 +25,7 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Controls\KsiazkaControls - Copy.xaml">
+    <Page Update="Controls\KsiazkaControls.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

@@ -89,7 +89,7 @@ namespace Biblioteka.Core
             foreach (var wypozyczenie in wypozyczeniaDoZwrotu)
             {
                 var szukaneWypozyczenieWLiscie = ListaWypozyczen.FirstOrDefault(x => x.id_wypozyczenia == wypozyczenie.id_wypozyczenia);
-                if (szukaneWypozyczenieWLiscie != null)
+                if (szukaneWypozyczenieWLiscie != null && szukaneWypozyczenieWLiscie.data_zwrotu != null)
                 {
                     szukaneWypozyczenieWLiscie.data_zwrotu = DateTime.Now;
                 }

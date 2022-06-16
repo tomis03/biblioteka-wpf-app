@@ -35,6 +35,8 @@ namespace Biblioteka
             var viewModel = (WypozyczenieViewModel)DataContext;
             viewModel.ZwrocWypozyczeniaCommand.Execute(null);
             NavigationService.Refresh();
+            ListaWypozyczenPage page = new ListaWypozyczenPage();
+            NavigationService.Navigate(page);
         }
     }
 }
